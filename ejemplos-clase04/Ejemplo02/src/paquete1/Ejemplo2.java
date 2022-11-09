@@ -30,14 +30,14 @@ public class Ejemplo2 {
         System.out.println("Ingrese nota de asignatura 1");
         notaAsignatura1 = entrada.nextDouble();
         System.out.println("Ingrese nombre de asignatura 2");
-        entrada.nextLine(); // limpieza de buffer
+        entrada.nextLine(); // limpieza de buffer, solo cuando pasamos de numérico a cadena.
         nombreAsignatura2 = entrada.nextLine();
         System.out.println("Ingrese nota de asignatura 2");
         notaAsignatura2 = entrada.nextDouble();
         
         System.out.printf("Asignatura 1: %s\nNota 1:%.2f\nAsignatura 2:%s\n"
                 + "Nota 2: %.2f\n",
-                nombreAsignatura1,
+                nombreAsignatura1, 
                 notaAsignatura1,
                 nombreAsignatura2,
                 notaAsignatura2);
